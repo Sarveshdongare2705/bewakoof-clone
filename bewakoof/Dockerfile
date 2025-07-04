@@ -1,14 +1,17 @@
-# Use Eclipse Temurin base image with Java 17
+# Use OpenJDK with Maven for building
+FROM maven:3.9.6-eclipse-temurin-17-alpine AS build
+
+WORKDIR /app
+COPY . .
+
+# Build the app with Maven
+RUN mvn clean package -DskipTests
+
+# Second stage: Run the app
 FROM eclipse-temurin:17-jdk-alpine
 
-# Set working directory
 WORKDIR /app
+COPY --from=build /app/target/*.jar app.jar
 
-# Copy your jar file
-COPY target/*.jar app.jar
-
-# Expose port
 EXPOSE 8080
-
-# Start the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
