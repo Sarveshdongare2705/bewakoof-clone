@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #facc15;
+}
+
+.nav-but{
+    @apply cursor-pointer mx-3
+}
+.but{
+    @apply  text-black w-30 py-2 border-2 border-black font-bold ml-2 text-center cursor-pointer
+}
+/* globals.css */
+body {
+  font-family: var(--font-montserrat-alternates), sans-serif;
+}
+
+.input{
+  @apply border border-gray-200 px-7 py-4 mt-4 w-full bg-white outline-none
+}
+.loginBut{
+  @apply bg-yellow-400 max-w-180 min-w-90 mt-4 text-black font-semibold py-4 px-7 rounded hover:bg-yellow-500 transition cursor-pointer
+}
+.err{
+  @apply text-sm font-medium text-red-500 mt-3
+}
+.select{
+  @apply bg-white py-6 px-4 mt-2
+}
+.nav-opt{
+  @apply text-base font-normal mx-1 cursor-pointer md:mx-10
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+.curtain{
+  @apply w-[80px] h-[55px] rounded-b-full bg-yellow-400
+}
+
+.heading{
+  @apply text-2xl text-black font-light mb-12 text-center
+}

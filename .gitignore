@@ -1,0 +1,62 @@
+# ======================
+# Global
+# ======================
+.env
+*.env
+*.env.local
+*.log
+.DS_Store
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# ======================
+# Spring Boot (bewakoof)
+# ======================
+/bewakoof/target/
+/bewakoof/.idea/
+/bewakoof/.classpath
+/bewakoof/.project
+/bewakoof/.settings/
+/bewakoof/*.iml
+/bewakoof/*.jar
+/bewakoof/*.war
+
+/bewakoof/src/main/resources/application.properties
+/bewakoof/src/main/resources/application.yml
+
+# ======================
+# Next.js Frontend (ecom-frontend)
+# ======================
+/ecom-frontend/.next/
+/ecom-frontend/out/
+/ecom-frontend/node_modules/
+/ecom-frontend/.env.local
+/ecom-frontend/.env.production
+/ecom-frontend/.env.development
+/ecom-frontend/.DS_Store
+
+/ecom-frontend/src/utils/Axios.js
+
+# Vercel deployment
+/ecom-frontend/.vercel
+
+# Build output (if exported statically)
+/ecom-frontend/.exported
+
+# Log files
+/ecom-frontend/npm-debug.log*
+/ecom-frontend/yarn-debug.log*
+/ecom-frontend/yarn-error.log*
+
+# ======================
+# Flask + Streamlit AI (styleAI)
+# ======================
+/styleAI/__pycache__/
+/styleAI/*.pyc
+/styleAI/.env
+/styleAI/venv/
+/styleAI/.vscode/
