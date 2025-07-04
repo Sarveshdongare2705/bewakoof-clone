@@ -7,7 +7,7 @@ public enum DesignType {
     TYPOGRAPHY,
     SOLID,
     STRIPED,
-    CHECKERED,
+    CHECKED,
     CAMOUFLAGE,
     COLOR_BLOCK,
     
