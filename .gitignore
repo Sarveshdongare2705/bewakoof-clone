@@ -16,6 +16,7 @@ __pycache__/
 # ======================
 # Spring Boot (bewakoof)
 # ======================
+/bewakoof/.env
 /bewakoof/target/
 /bewakoof/.idea/
 /bewakoof/.classpath
