@@ -26,8 +26,6 @@ __pycache__/
 /bewakoof/*.jar
 /bewakoof/*.war
 
-/bewakoof/src/main/resources/application.properties
-/bewakoof/src/main/resources/application.yml
 
 # ======================
 # Next.js Frontend (ecom-frontend)
