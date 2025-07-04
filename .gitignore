@@ -60,3 +60,4 @@ __pycache__/
 /styleAI/.env
 /styleAI/venv/
 /styleAI/.vscode/
+/styleAI/app.py
